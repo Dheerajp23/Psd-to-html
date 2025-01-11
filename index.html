@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <nav>
+                    <ul class=" flex justify-bet align collapse">
+                        <li> <a href="#about">About Us</a></li>
+                        <li> <a href="#menu">Menu</a></li>
+                        <li> <a href="#gallery">Gallery</a></li>
+                        <li> <a href="#home"> <img src="./Image/Logo.png" alt="" class="img"> </a></li>
+                        <li><a href="#bookings">Bookings</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                    <div class="show flex justify-bet align">
+                        <div>
+                            <a href="#home"> <img src="./Image/Logo.png" alt="" class="img"> </a>
+                        </div>
+                        <div class="hid">
+                            <span class=" fa fa-bars icon icon1 "></span>
+                            <span class=" fa fa-bars icon icon2 icon3 "></span>
+                   
+                            <div class= "hidden hidden-nav">
+                                <ul class="">
+                                    <li> <a href="#about">About Us</a></li>
+                                    <li> <a href="#menu">Menu</a></li>
+                                    <li> <a href="#gallery">Gallery</a></li>
+    
+                                    <li><a href="#bookings">Bookings</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </nav>
+
+                <div class="banner ">
+                    <p>START YOUR MEAL WITH <br> EXCLUSIVE MENU</p>
+                    <p>Learn More</p>
+                    <img src="./Image/logo2.png" alt="">
+                    <div class="banner-btn secondBanner">
+                        <p class="">BOOK YOUR </p>
+                        <p>TABLE</p>
+                        <p>NOW</p> 
+                    </div>
+                </div>
+              
+            </div>
+        </header>
+
+    <div class="wrap-2" id="about">
+        <div>
+            <div class=" flex align wrap-2-title">
+                <img src="./Image/headerSign.png" alt="headersign">
+                <img src="./Image/abouttitle.png" alt="headertitle">
+                <img src="./Image/headerSign.png" alt="headersign">
+            </div>
+            <div class="wrap-2-content">
+                <p class="wrap-2-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vive rra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+                </p>
+                <p class="wrap-2-p2 ">
+                    Visit OR Book 
+                </p>
+                <p class="font-primary wrap-2-p2">
+                    NOW
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap-3">
+      
+        
+
+        
+        
+            <div class="wrap-3-content">
+                <div class="flex align wrap-3-title ">
+                    <img src="./Image/wrap3sign.png" alt="">
+                    <h2 class="wrap-3-title">OUR FOOD QUALITY</h2>
+                    <img src="./Image/wrap3sign.png" alt="">
+                </div>
+                
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis <br> ipsum suspendisse ultrices gravida.
+                    </p>
+              
+            
+        
+       </div>
+    </div>
+
+    </div>
+</body>
+
+
+<script>
+    document.querySelector(".icon1").addEventListener("click",function(){
+        document.querySelector(".hidden").classList.add("burger");
+        document.querySelector(".hidden").classList.remove("hidden-nav");
+        document.querySelector(".hid").querySelector(".icon1").classList.add("icon3");
+        document.querySelector(".hid").querySelector(".icon2").classList.remove("icon3");
+    })
+
+    document.querySelector(".icon2").addEventListener("click",function(){
+        document.querySelector(".hidden").classList.remove("burger");
+        document.querySelector(".hidden").classList.add("hidden-nav");
+        document.querySelector(".hid").querySelector(".icon1").classList.remove("icon3");
+        document.querySelector(".hid").querySelector(".icon2").classList.add("icon3");
+    })
+</script>
+</html>
